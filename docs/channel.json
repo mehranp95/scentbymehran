@@ -1,0 +1,18 @@
+{
+  "channel": {
+    "username": "Scentbymehran",
+    "title_fa": "عطر با مهران",
+    "url": "https://t.me/Scentbymehran",
+    "preview": "https://t.me/s/Scentbymehran",
+    "owner": "Mehran Pakand"
+  },
+  "knowledge": {
+    "style_guide": "docs/style-guide.md",
+    "style_rules": "docs/style-rules.json",
+    "corpus_reviews": "corpus/reviews.txt",
+    "corpus_raw": "corpus/raw-posts.txt",
+    "prompt": "prompts/write-review.md"
+  },
+  "default_register": "A_narrative_essay",
+  "analyzed_from": "Telegram public preview posts scraped 2026-08-31"
+}
