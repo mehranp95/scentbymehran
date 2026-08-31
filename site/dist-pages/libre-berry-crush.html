@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>لیبره بری کراش | Libre Berry Crush Yves Saint Laurent for women — عطر با مهران</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Vazirmatn:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <style>:root {
+  --bg0: #14110f;
+  --bg1: #1c1814;
+  --ink: #f4efe6;
+  --muted: #b7aa9a;
+  --line: rgba(244, 239, 230, 0.12);
+  --accent: #c4a484;
+  --serif: "Fraunces", "Times New Roman", serif;
+  --sans: "Vazirmatn", Tahoma, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: var(--sans);
+  background: var(--bg0);
+  line-height: 1.85;
+  font-weight: 400;
+}
+
+a { color: inherit; text-decoration: none; }
+img { max-width: 100%; display: block; }
+
+.atmosphere {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(900px 520px at 85% -10%, color-mix(in srgb, var(--accent) 28%, transparent), transparent 60%),
+    radial-gradient(700px 480px at 0% 100%, color-mix(in srgb, var(--accent) 14%, transparent), transparent 55%),
+    linear-gradient(160deg, #100e0c 0%, #1a1612 45%, #12100e 100%);
+}
+.atmosphere::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  opacity: 0.35;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.45'/%3E%3C/svg%3E");
+  mix-blend-mode: soft-light;
+}
+
+.top, main, .foot { position: relative; z-index: 1; }
+
+.top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.25rem 1.25rem 0.5rem;
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(10px);
+}
+.brand {
+  font-family: var(--sans);
+  font-weight: 700;
+  font-size: 1.15rem;
+  letter-spacing: -0.02em;
+}
+.brand span {
+  display: block;
+  font-family: var(--serif);
+  font-weight: 500;
+  font-size: 0.78rem;
+  color: var(--muted);
+  letter-spacing: 0.08em;
+  margin-top: 0.15rem;
+}
+.nav-scroll {
+  display: flex;
+  gap: 0.45rem;
+  overflow-x: auto;
+  padding-bottom: 0.75rem;
+  scrollbar-width: thin;
+}
+.nav-chip {
+  flex: 0 0 auto;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  font-size: 0.78rem;
+  color: var(--muted);
+  transition: 0.25s ease;
+}
+.nav-chip:hover, .nav-chip.is-active {
+  color: var(--ink);
+  border-color: color-mix(in srgb, var(--chip, var(--accent)) 55%, transparent);
+  background: color-mix(in srgb, var(--chip, var(--accent)) 18%, transparent);
+}
+
+main { padding: 1.5rem 1.25rem 4rem; max-width: 1100px; margin: 0 auto; }
+
+.hero {
+  padding: 2.5rem 0 2rem;
+  max-width: 36rem;
+  animation: rise 0.8s ease both;
+}
+.eyebrow {
+  margin: 0 0 0.6rem;
+  color: color-mix(in srgb, var(--accent) 80%, white);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+}
+.hero h1, .review__title-fa {
+  margin: 0;
+  font-size: clamp(2.4rem, 7vw, 4rem);
+  line-height: 1.15;
+  font-weight: 700;
+}
+.lede {
+  margin: 1rem 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+  font-weight: 300;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1rem;
+}
+@media (min-width: 720px) {
+  .grid { grid-template-columns: repeat(3, 1fr); gap: 1.25rem; }
+}
+@media (min-width: 980px) {
+  .grid { grid-template-columns: repeat(4, 1fr); }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--line);
+  border-radius: 1.1rem;
+  overflow: hidden;
+  background: color-mix(in srgb, var(--bg1) 88%, var(--accent));
+  transition: transform 0.35s ease, border-color 0.35s ease, box-shadow 0.35s ease;
+  animation: rise 0.7s ease both;
+  animation-delay: var(--delay, 0ms);
+}
+.card:hover {
+  transform: translateY(-4px);
+  border-color: color-mix(in srgb, var(--accent) 50%, transparent);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.28);
+}
+.card__media {
+  aspect-ratio: 3/4;
+  background:
+    radial-gradient(circle at 50% 30%, color-mix(in srgb, var(--accent) 25%, transparent), transparent 55%),
+    #0d0b0a;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+.card__media img {
+  max-height: 100%;
+  width: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 18px rgba(0,0,0,0.35));
+  transition: transform 0.45s ease;
+}
+.card:hover .card__media img { transform: scale(1.04); }
+.card__meta { padding: 0.9rem 0.95rem 1.1rem; }
+.card__brand {
+  margin: 0;
+  font-size: 0.72rem;
+  color: var(--muted);
+  letter-spacing: 0.06em;
+}
+.card__meta h2 {
+  margin: 0.25rem 0 0.15rem;
+  font-size: 1.05rem;
+  font-weight: 600;
+}
+.card__en {
+  margin: 0;
+  font-family: var(--serif);
+  font-size: 0.78rem;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.review { max-width: 720px; margin: 0 auto; }
+.review__head { padding: 1.5rem 0 1rem; animation: rise 0.7s ease both; }
+.back {
+  display: inline-block;
+  margin-bottom: 1.2rem;
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+.review__title-en {
+  margin: 0.35rem 0 0.2rem;
+  font-family: var(--serif);
+  font-size: clamp(1.6rem, 4.5vw, 2.5rem);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+.review__title-fa {
+  color: color-mix(in srgb, var(--accent) 75%, white);
+  font-size: clamp(1.3rem, 3.5vw, 1.8rem);
+}
+
+.frag-panel {
+  margin: 1.25rem 0 2rem;
+  animation: rise 0.85s ease 0.08s both;
+}
+.frag-panel__frame {
+  display: grid;
+  gap: 0;
+  border: 1px solid var(--line);
+  border-radius: 1.35rem;
+  overflow: hidden;
+  background: linear-gradient(145deg, rgba(255,255,255,0.04), rgba(255,255,255,0.01));
+  box-shadow: 0 24px 60px rgba(0,0,0,0.28);
+}
+@media (min-width: 760px) {
+  .frag-panel__frame { grid-template-columns: 0.9fr 1.1fr; min-height: 380px; }
+}
+.frag-panel__bottle {
+  display: grid;
+  place-items: center;
+  padding: 1.75rem;
+  background:
+    radial-gradient(circle at 50% 40%, color-mix(in srgb, var(--accent) 30%, transparent), transparent 60%),
+    linear-gradient(180deg, #1a1512, #0c0a09);
+}
+.frag-panel__bottle img {
+  max-height: 320px;
+  width: auto;
+  filter: drop-shadow(0 18px 28px rgba(0,0,0,0.45));
+  animation: floaty 5.5s ease-in-out infinite;
+}
+.frag-panel__notes {
+  padding: 1.6rem 1.4rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-top: 1px solid var(--line);
+  background: rgba(0,0,0,0.18);
+}
+@media (min-width: 760px) {
+  .frag-panel__notes { border-top: 0; border-right: 1px solid var(--line); }
+}
+.frag-kicker {
+  margin: 0;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  font-family: var(--serif);
+}
+.frag-panel__notes h2 {
+  margin: 0.45rem 0 1.1rem;
+  font-family: var(--serif);
+  font-size: 1.35rem;
+  line-height: 1.25;
+}
+.accords {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  margin: 0 0 1rem;
+}
+.accord {
+  width: var(--w);
+  padding: 0.4rem 0.75rem;
+  border-radius: 0.35rem;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--accent) 72%, black), color-mix(in srgb, var(--accent) 35%, transparent));
+  font-size: 0.82rem;
+  font-weight: 500;
+  animation: rise 0.5s ease both;
+  animation-delay: calc(0.1s + var(--i) * 0.05s);
+}
+.note-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.frag-shot {
+  margin: 1.15rem 0 0;
+  border-radius: 0.85rem;
+  overflow: hidden;
+  border: 1px solid var(--line);
+  background: #0a0908;
+}
+.frag-shot img { width: 100%; }
+.frag-shot figcaption {
+  margin: 0;
+  padding: 0.55rem 0.75rem;
+  font-size: 0.72rem;
+  color: var(--muted);
+  border-top: 1px solid var(--line);
+}
+.note-list li {
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  background: color-mix(in srgb, var(--accent) 14%, transparent);
+  font-size: 0.9rem;
+  animation: rise 0.55s ease both;
+  animation-delay: calc(0.12s + var(--i) * 0.06s);
+}
+.frag-link {
+  margin-top: 1.35rem;
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  width: fit-content;
+  padding: 0.7rem 1rem;
+  border-radius: 0.85rem;
+  background: color-mix(in srgb, var(--accent) 20%, transparent);
+  border: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
+  transition: 0.25s ease;
+}
+.frag-link span {
+  font-family: var(--serif);
+  font-size: 0.78rem;
+  color: var(--muted);
+}
+.frag-link:hover {
+  background: color-mix(in srgb, var(--accent) 32%, transparent);
+  transform: translateY(-1px);
+}
+
+.review__body {
+  animation: rise 0.9s ease 0.15s both;
+  font-size: 1.05rem;
+  font-weight: 400;
+}
+.review-label {
+  margin: 0 0 1rem;
+  font-size: 0.8rem;
+  letter-spacing: 0.16em;
+  color: var(--muted);
+  font-weight: 500;
+}
+.review__body p {
+  margin: 0 0 0.95rem;
+  color: #efe8dc;
+}
+.review__body p:last-child {
+  color: color-mix(in srgb, var(--accent) 70%, white);
+  font-size: 1.08rem;
+}
+
+.review__cta {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--line);
+  animation: rise 0.9s ease 0.2s both;
+}
+.review__cta a {
+  display: inline-block;
+  padding: 0.85rem 1.2rem;
+  border-radius: 999px;
+  background: var(--accent);
+  color: #16120f;
+  font-weight: 600;
+  transition: 0.25s ease;
+}
+.review__cta a:hover { filter: brightness(1.08); transform: translateY(-1px); }
+
+.foot {
+  padding: 1.5rem 1.25rem 2.5rem;
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.85rem;
+  border-top: 1px solid var(--line);
+}
+.foot a { color: color-mix(in srgb, var(--accent) 80%, white); text-decoration: underline; text-underline-offset: 3px; }
+
+@keyframes rise {
+  from { opacity: 0; transform: translateY(14px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes floaty {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition: none !important;
+  }
+}
+</style>
+</head>
+<body style="--accent:#8E2F4A">
+  <div class="atmosphere" aria-hidden="true"></div>
+  <header class="top">
+    <a class="brand" href="/">عطر با مهران<span>ScentbyMehran</span></a>
+    <nav class="nav-scroll"><a class="nav-chip" href="/fleur-narcotique.html" style="--chip:#C2586E">فلور نارکوتیک</a><a class="nav-chip" href="/aventus-for-her.html" style="--chip:#7B2E3C">اونتوس فور هر</a><a class="nav-chip" href="/alien.html" style="--chip:#B08423">الین</a><a class="nav-chip" href="/secrete-euphorie.html" style="--chip:#2F6E6B">سکرت اوفوری</a><a class="nav-chip" href="/la-panthere.html" style="--chip:#2E5E4E">لا پانتر</a><a class="nav-chip" href="/pure-musc.html" style="--chip:#9AA5B1">پیور ماسک</a><a class="nav-chip" href="/for-her-edp.html" style="--chip:#4A4046">فور هر</a><a class="nav-chip" href="/gorgeous-gardenia.html" style="--chip:#D2695E">فلورا گاردنیا</a><a class="nav-chip" href="/gorgeous-magnolia.html" style="--chip:#C9A227">فلورا ماگنولیا</a><a class="nav-chip" href="/chance-eau-tendre.html" style="--chip:#D18FA6">چنس او تاندر</a><a class="nav-chip" href="/chance-eau-fraiche.html" style="--chip:#4E8C5A">چنس او فرش</a><a class="nav-chip" href="/idole.html" style="--chip:#A4623F">آیدل</a><a class="nav-chip" href="/paradoxe.html" style="--chip:#6C8EA4">پارادوکس</a><a class="nav-chip is-active" href="/libre-berry-crush.html" style="--chip:#8E2F4A">لیبره بری کراش</a><a class="nav-chip" href="/signature.html" style="--chip:#2F4A6B">سیگنیچر</a><a class="nav-chip" href="/rosendo-5.html" style="--chip:#9E5B34">روزندو ماتئو شماره ۵</a><a class="nav-chip" href="/pure-poison.html" style="--chip:#55606E">پیور پویزن</a></nav>
+  </header>
+  <main>
+  <article class="review" style="--accent:#8E2F4A">
+    <header class="review__head">
+      <a class="back" href="/">← همه عطرها</a>
+      <p class="eyebrow">Yves Saint Laurent · ۲۰۲۵</p>
+      <h1 class="review__title-en">Libre Berry Crush Yves Saint Laurent for women</h1>
+      <p class="review__title-fa">لیبره بری کراش</p>
+    </header>
+
+    
+  <section class="frag-panel" aria-label="نوت‌های اصلی به سبک فرگرنتیکا">
+    <div class="frag-panel__frame">
+      <div class="frag-panel__bottle">
+        <img src="/images/bottles/libre-berry-crush.jpg" alt="Libre Berry Crush Yves Saint Laurent for women" />
+      </div>
+      <div class="frag-panel__notes">
+        <p class="frag-kicker">Main accords · نوت‌های اصلی</p>
+        <h2>Libre Berry Crush Yves Saint Laurent for women</h2>
+        <div class="accords" aria-hidden="false"><div class="accord" style="--w:92%; --i:0"><span>تمشک</span></div><div class="accord" style="--w:80%; --i:1"><span>لوندر</span></div><div class="accord" style="--w:68%; --i:2"><span>وانیل</span></div><div class="accord" style="--w:56%; --i:3"><span>نارگیل</span></div></div>
+        <ul class="note-list"><li style="--i:0"><span>تمشک</span></li><li style="--i:1"><span>لوندر</span></li><li style="--i:2"><span>وانیل</span></li><li style="--i:3"><span>نارگیل</span></li></ul>
+        <figure class="frag-shot">
+          <img src="/images/fragrantica-shots/panel-libre-berry-crush.png" alt="کارت بصری شیشه و نوت‌های لیبره بری کراش" loading="lazy" />
+          <figcaption>کارت بصری شیشه + نوت‌ها (برای اشتراک‌گذاری)</figcaption>
+        </figure>
+        <a class="frag-link" href="https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Berry-Crush-120531.html" target="_blank" rel="noopener">
+          صفحه کامل فرگرنتیکا
+          <span>Fragrantica ↗</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+    <section class="review__body">
+      <h2 class="review-label">ریویو</h2>
+      <p>یه جور گشنگی هست که ربطی به غذا نداره.</p><p>ساعت یازده شب سیری، ولی یه چیزی میخوای. نمیدونی چی. فقط میدونی که میخوای.</p><p>هوس برخلاف چیزی که فکر میکنیم همیشه چیز بدی نیست. یه وقتایی تنها چیزیه که ثابت میکنه هنوز زنده‌ای.</p><p>ایو سن لوران توی خط Libre یه رفرنس میوه‌ای معرفی کرده به اسم Berry Crush که دقیقا سراغ همین حس رفته.</p><p>تمشک اول کار میاد و اصلا خجالتی نیست. ترش و آبدار و پررنگ.</p><p>اما نکته اینجاست که زیرش لوندره.</p><p>لوندر معمولا مال دنیای دیگه‌ایه. مال آرایشگاه مردونه و صابون و آرامش. کنار تمشک گذاشتنش روی کاغذ یه اشتباه به نظر میاد.</p><p>ولی همون تلخی سبز لوندره که نمیذاره تمشک آبنبات بشه. و این هنر کاره. اگه لوندر رو بردارید، این عطر میشه یکی از هزار تا شربت میوه‌ای بازار.</p><p>وانیل و یه ته‌مایه نارگیل هم آخر کار میان و یه پوست کِرِمی دور همه چی میکشن.</p><p>پرفورمنسش زیاده. حواستون باشه؛ اینجا افراط خیلی راحت اتفاق میفته و دو پاف بیشتر نمیخواد.</p><p>برای شب و دیت و روزای سرده. با تناژ قرمز یا مشکی. تو آفیس و زیر آفتاب ظهر یه ذره زیادیه.</p><p>یه هوس شب‌هنگام...</p>
+    </section>
+
+    <aside class="review__cta">
+      <a href="https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Berry-Crush-120531.html" target="_blank" rel="noopener">مشاهده در Fragrantica</a>
+    </aside>
+  </article></main>
+  <footer class="foot">
+    <p>ریویوها با صدای کانال <a href="https://t.me/Scentbymehran" target="_blank" rel="noopener">@Scentbymehran</a></p>
+  </footer>
+</body>
+</html>

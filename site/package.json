@@ -1,0 +1,16 @@
+{
+  "name": "scentbymehran-reviews",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "build:pages": "node scripts/build.mjs",
+    "dev": "node scripts/build.mjs && vite --host 127.0.0.1 --port 43127",
+    "build": "node scripts/build.mjs && vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 43127"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.62.1",
+    "vite": "^6.3.5"
+  }
+}
