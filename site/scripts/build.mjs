@@ -72,10 +72,6 @@ function notesPanel(r) {
         <h2>${esc(r.name_en)}</h2>
         <div class="accords" aria-hidden="false">${accords}</div>
         <ul class="note-list">${notes}</ul>
-        <figure class="frag-shot">
-          <img src="/images/fragrantica-shots/panel-${r.id}.png" alt="کارت بصری شیشه و نوت‌های ${esc(r.name_fa)}" loading="lazy" />
-          <figcaption>کارت بصری شیشه + نوت‌ها (برای اشتراک‌گذاری)</figcaption>
-        </figure>
         <a class="frag-link" href="${esc(r.fragrantica)}" target="_blank" rel="noopener">
           صفحه کامل فرگرنتیکا
           <span>Fragrantica ↗</span>
