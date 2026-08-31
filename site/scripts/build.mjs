@@ -1,10 +1,15 @@
-import { readFileSync, writeFileSync, mkdirSync, cpSync, existsSync } from "fs";
+import { readFileSync, writeFileSync, mkdirSync, cpSync, rmSync, existsSync } from "fs";
 import { dirname, join } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const root = join(__dirname, "..");
 const out = join(root, "dist-pages");
+
+// Local: "./"  |  GitHub Pages project site: "/scentbymehran/"
+const BASE = process.env.SITE_BASE || "./";
+
+if (existsSync(out)) rmSync(out, { recursive: true });
 mkdirSync(out, { recursive: true });
 
 const reviews = JSON.parse(readFileSync(join(root, "data/reviews.json"), "utf8"));
@@ -18,11 +23,16 @@ function esc(s) {
     .replaceAll('"', "&quot;");
 }
 
+function asset(path) {
+  const clean = String(path).replace(/^\//, "");
+  return `${BASE}${clean}`;
+}
+
 function shell({ title, accent, body, activeId }) {
   const nav = reviews
     .map(
       (r) =>
-        `<a class="nav-chip${r.id === activeId ? " is-active" : ""}" href="/${r.id}.html" style="--chip:${r.accent_color}">${esc(r.name_fa)}</a>`
+        `<a class="nav-chip${r.id === activeId ? " is-active" : ""}" href="${asset(`${r.id}.html`)}" style="--chip:${r.accent_color}">${esc(r.name_fa)}</a>`
     )
     .join("");
 
@@ -40,7 +50,7 @@ function shell({ title, accent, body, activeId }) {
 <body style="--accent:${accent || "#c4a484"}">
   <div class="atmosphere" aria-hidden="true"></div>
   <header class="top">
-    <a class="brand" href="/">عطر با مهران<span>ScentbyMehran</span></a>
+    <a class="brand" href="${asset("index.html")}">عطر با مهران<span>ScentbyMehran</span></a>
     <nav class="nav-scroll">${nav}</nav>
   </header>
   <main>${body}</main>
@@ -65,7 +75,7 @@ function notesPanel(r) {
   <section class="frag-panel" aria-label="نوت‌های اصلی به سبک فرگرنتیکا">
     <div class="frag-panel__frame">
       <div class="frag-panel__bottle">
-        <img src="/images/bottles/${r.id}.jpg" alt="${esc(r.name_en)}" />
+        <img src="${asset(`images/bottles/${r.id}.jpg`)}" alt="${esc(r.name_en)}" />
       </div>
       <div class="frag-panel__notes">
         <p class="frag-kicker">Main accords · نوت‌های اصلی</p>
@@ -84,9 +94,9 @@ function notesPanel(r) {
 const cards = reviews
   .map(
     (r, i) => `
-    <a class="card" href="/${r.id}.html" style="--accent:${r.accent_color}; --delay:${i * 40}ms">
+    <a class="card" href="${asset(`${r.id}.html`)}" style="--accent:${r.accent_color}; --delay:${i * 40}ms">
       <div class="card__media">
-        <img src="/images/bottles/${r.id}.jpg" alt="" loading="lazy" />
+        <img src="${asset(`images/bottles/${r.id}.jpg`)}" alt="" loading="lazy" />
       </div>
       <div class="card__meta">
         <p class="card__brand">${esc(r.brand)}</p>
@@ -121,7 +131,7 @@ for (const r of reviews) {
   const body = `
   <article class="review" style="--accent:${r.accent_color}">
     <header class="review__head">
-      <a class="back" href="/">← همه عطرها</a>
+      <a class="back" href="${asset("index.html")}">← همه عطرها</a>
       <p class="eyebrow">${esc(r.brand)}${year}</p>
       <h1 class="review__title-en">${esc(r.name_en)}</h1>
       <p class="review__title-fa">${esc(r.name_fa)}</p>
@@ -150,5 +160,8 @@ for (const r of reviews) {
   );
 }
 
-// copy css reference not needed — inlined
-console.log(`Built ${reviews.length + 1} pages -> ${out}`);
+// copy static images next to pages
+cpSync(join(root, "public/images"), join(out, "images"), { recursive: true });
+writeFileSync(join(out, ".nojekyll"), "");
+
+console.log(`Built ${reviews.length + 1} pages -> ${out} (BASE=${BASE})`);

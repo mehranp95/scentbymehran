@@ -2,9 +2,11 @@
 
 دانش و صدای کانال تلگرام [@Scentbymehran](https://t.me/Scentbymehran) + گالری ریویوهای HTML.
 
-## ریویوهای HTML
+## سایت آنلاین (GitHub Pages)
 
-سایت چندصفحه‌ای در پوشه `site/`:
+**https://mehranp95.github.io/scentbymehran/**
+
+## اجرای لوکال
 
 ```bash
 cd site
@@ -12,9 +14,15 @@ npm install
 npm run dev
 ```
 
-باز کردن: [http://127.0.0.1:43127](http://127.0.0.1:43127)
+باز کردن: http://127.0.0.1:43127
 
-هر عطر یک صفحه جدا با عکس شیشه، کارت نوت‌ها، ریویو به صدای کانال، و لینک Fragrantica دارد.
+برای دیپلوی دوباره روی Pages:
+
+```bash
+cd site
+export GH_TOKEN=...   # توکن با دسترسی repo
+npm run deploy:pages
+```
 
 ## دانش سبک نوشتاری
 
