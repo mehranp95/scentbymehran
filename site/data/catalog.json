@@ -1,0 +1,138 @@
+[
+  {
+    "id": "fleur-narcotique",
+    "name_en": "Fleur Narcotique Ex Nihilo",
+    "name_fa": "فلور نارکوتیک",
+    "brand": "Ex Nihilo",
+    "slug": "fleur-narcotique",
+    "fragrantica": "https://www.fragrantica.com/perfume/Ex-Nihilo/Fleur-Narcotique-27571.html"
+  },
+  {
+    "id": "aventus-for-her",
+    "name_en": "Aventus for Her Creed for women",
+    "name_fa": "اونتوس فور هر",
+    "brand": "Creed",
+    "slug": "aventus-for-her",
+    "fragrantica": "https://www.fragrantica.com/perfume/Creed/Aventus-for-Her-30601.html"
+  },
+  {
+    "id": "alien",
+    "name_en": "Alien Mugler for women",
+    "name_fa": "الین",
+    "brand": "Mugler",
+    "slug": "alien",
+    "fragrantica": "https://www.fragrantica.com/perfume/Mugler/Alien-1013.html"
+  },
+  {
+    "id": "secrete-euphorie",
+    "name_en": "Secrète Euphorie Rance 1795",
+    "name_fa": "سکرت اوفوری",
+    "brand": "Rancé 1795",
+    "slug": "secrete-euphorie",
+    "fragrantica": "https://www.fragrantica.com/perfume/Rance-1795/Secrete-Euphorie-44320.html"
+  },
+  {
+    "id": "la-panthere",
+    "name_en": "La Panthère Cartier for women",
+    "name_fa": "لا پانتر",
+    "brand": "Cartier",
+    "slug": "la-panthere",
+    "fragrantica": "https://www.fragrantica.com/perfume/Cartier/La-Panthere-23295.html"
+  },
+  {
+    "id": "pure-musc",
+    "name_en": "Pure Musc For Her Narciso Rodriguez for women",
+    "name_fa": "پیور ماسک",
+    "brand": "Narciso Rodriguez",
+    "slug": "pure-musc",
+    "fragrantica": "https://www.fragrantica.com/perfume/Narciso-Rodriguez/Pure-Musc-For-Her-55484.html"
+  },
+  {
+    "id": "for-her-edp",
+    "name_en": "Narciso Rodriguez For Her Eau de Parfum for women",
+    "name_fa": "فور هر",
+    "brand": "Narciso Rodriguez",
+    "slug": "for-her-edp",
+    "fragrantica": "https://www.fragrantica.com/perfume/Narciso-Rodriguez/For-Her-Eau-de-Parfum-2924.html"
+  },
+  {
+    "id": "gorgeous-gardenia",
+    "name_en": "Flora Gorgeous Gardenia Gucci for women",
+    "name_fa": "فلورا گاردنیا",
+    "brand": "Gucci",
+    "slug": "gorgeous-gardenia",
+    "fragrantica": "https://www.fragrantica.com/perfume/Gucci/Flora-Gorgeous-Gardenia-69043.html"
+  },
+  {
+    "id": "gorgeous-magnolia",
+    "name_en": "Flora Gorgeous Magnolia Gucci for women",
+    "name_fa": "فلورا ماگنولیا",
+    "brand": "Gucci",
+    "slug": "gorgeous-magnolia",
+    "fragrantica": "https://www.fragrantica.com/perfume/Gucci/Flora-Gorgeous-Magnolia-83621.html"
+  },
+  {
+    "id": "chance-eau-tendre",
+    "name_en": "Chance Eau Tendre Chanel for women",
+    "name_fa": "چنس او تاندر",
+    "brand": "Chanel",
+    "slug": "chance-eau-tendre",
+    "fragrantica": "https://www.fragrantica.com/perfume/Chanel/Chance-Eau-Tendre-8069.html"
+  },
+  {
+    "id": "chance-eau-fraiche",
+    "name_en": "Chance Eau Fraîche Chanel for women",
+    "name_fa": "چنس او فرش",
+    "brand": "Chanel",
+    "slug": "chance-eau-fraiche",
+    "fragrantica": "https://www.fragrantica.com/perfume/Chanel/Chance-Eau-Fraiche-2920.html"
+  },
+  {
+    "id": "idole",
+    "name_en": "Idôle Lancôme for women",
+    "name_fa": "آیدل",
+    "brand": "Lancôme",
+    "slug": "idole",
+    "fragrantica": "https://www.fragrantica.com/perfume/Lancome/Idole-55737.html"
+  },
+  {
+    "id": "paradoxe",
+    "name_en": "Paradoxe Prada for women",
+    "name_fa": "پارادوکس",
+    "brand": "Prada",
+    "slug": "paradoxe",
+    "fragrantica": "https://www.fragrantica.com/perfume/Prada/Paradoxe-74780.html"
+  },
+  {
+    "id": "libre-berry-crush",
+    "name_en": "Libre Berry Crush Yves Saint Laurent for women",
+    "name_fa": "لیبره بری کراش",
+    "brand": "Yves Saint Laurent",
+    "slug": "libre-berry-crush",
+    "fragrantica": "https://www.fragrantica.com/perfume/Yves-Saint-Laurent/Libre-Berry-Crush-120531.html"
+  },
+  {
+    "id": "signature",
+    "name_en": "Signature Montblanc for women",
+    "name_fa": "سیگنیچر",
+    "brand": "Montblanc",
+    "slug": "signature",
+    "fragrantica": "https://www.fragrantica.com/perfume/Montblanc/Signature-60962.html"
+  },
+  {
+    "id": "rosendo-5",
+    "name_en": "Rosendo Mateu No. 5 Floral, Amber, Sensual Musk",
+    "name_fa": "روزندو ماتئو شماره ۵",
+    "brand": "Rosendo Mateu Olfactive Expressions",
+    "slug": "rosendo-5",
+    "fragrantica": "https://www.fragrantica.com/perfume/Rosendo-Mateu-Olfactive-Expressions/Rosendo-Mateu-No-5-Floral-Amber-Sensual-Musk-46115.html"
+  },
+  {
+    "id": "pure-poison",
+    "name_en": "Pure Poison Dior for women",
+    "name_fa": "پیور پویزن",
+    "brand": "Dior",
+    "slug": "pure-poison",
+    "fragrantica": "https://www.fragrantica.com/perfume/Dior/Pure-Poison-74.html"
+  }
+]
